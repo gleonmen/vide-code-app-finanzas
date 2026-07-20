@@ -127,3 +127,4 @@ El esquema, el cliente y el código de la app no cambian entre local y nube — 
 - Gráficas de evolución mensual.
 # vide-code-app-finanzas
 # vide-code-app-finanzas
+# vide-code-app-finanzas

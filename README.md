@@ -129,3 +129,4 @@ El esquema, el cliente y el código de la app no cambian entre local y nube — 
 # vide-code-app-finanzas
 # vide-code-app-finanzas
 # vide-code-app-finanzas
+# vide-code-app-finanzas

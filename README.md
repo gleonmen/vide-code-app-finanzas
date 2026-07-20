@@ -126,3 +126,4 @@ El esquema, el cliente y el código de la app no cambian entre local y nube — 
 - Autenticación (si la app deja de ser de un solo usuario).
 - Gráficas de evolución mensual.
 # vide-code-app-finanzas
+# vide-code-app-finanzas

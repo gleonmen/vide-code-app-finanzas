@@ -20,6 +20,15 @@ Aplicación web simple para registrar y clasificar ingresos y gastos personales:
 | Backend / base de datos | Supabase (Postgres) — corre localmente con Supabase CLI + Docker, portable a Supabase Cloud |
 | Estilos | CSS plano (`src/App.css`), sin framework de UI |
 
+## Estado actual del despliegue
+
+**Nada está desplegado en producción todavía.** Todo corre en local, en la máquina de desarrollo:
+
+- **Backend (Supabase / Postgres)**: sí corre **en contenedores Docker**, pero locales — `supabase start` levanta ~13 contenedores (Postgres, API/Kong, Studio, Auth, Storage, etc.) vía Docker Compose. Se ven con `docker ps`.
+- **Frontend (React / Vite)**: **no** corre en contenedor. Se ejecuta directamente como proceso de Node en el host (`npm run dev`), sin Docker de por medio.
+
+En otras palabras: hay contenedores involucrados, pero solo para la base de datos local de desarrollo, no como método de despliegue del proyecto. Ver [Cómo se desplegaría en la nube](#cómo-se-desplegaría-en-la-nube) para lo que falta para que la app sea accesible fuera de esta máquina.
+
 ## Estructura de las tablas
 
 Definidas en [`supabase/migrations/20260720204630_init_schema.sql`](supabase/migrations/20260720204630_init_schema.sql).
